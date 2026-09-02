@@ -1,0 +1,7 @@
+services:
+  portfolio:
+    image: ehtisham00/ehtisham-portfolio:v1
+    container_name: portfolio-compose
+    ports:
+      - "8082:80"
+    restart: unless-stopped
