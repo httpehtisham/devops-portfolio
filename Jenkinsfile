@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('Checkout Code') {
             steps {
-                git branch: 'main', url: 'https://github.com/ehtisham00/ehtisham-portfolio.git'
+                git branch: 'main', credentialsId: 'github-credentials', url: 'https://github.com/httpehtisham/devops-portfolio.git'
             }
         }
         stage('Build Docker Image') {
